@@ -18,7 +18,7 @@
     
     <!--header-->
     
-   <!-- <header class="header">
+   <header class="header">
         <div class="container">
             <nav class="navigation">
                 <a class="logo link" href="/">Web<span class="logo-name">Studio</span>
@@ -43,6 +43,12 @@
                 </ul>
                 </div>
             </nav>
+
+            <button type="button" class="burger-btn" data-menu-button>
+                <svg class="burger-icon">
+                    <use href="./images/sprite.svg#burger-icon"></use>
+                </svg>
+            </button>
     
     
             <ul class="list navigation-list">
@@ -65,7 +71,61 @@
             </ul>
     
         </div>
-    </header>-->
+
+        <div class="mobile-menu" data-menu>
+            <button type="button" class="mobile-close-button" data-menu-close>
+                <svg class="mobile-icon-close">
+                    <use href="./images/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+            <ul class="mobal-menu-nav list">
+                <li class="mobal-menu-nav-item">
+                    <a href="#" class="mobal-menu-nav-link link">Студия</a>
+                </li>
+        
+                <li class="mobal-menu-nav-item">
+                    <a href="./portfolio.html" class="mobal-menu-nav-link link">Портфолио</a>
+                </li>
+        
+                <li class="mobal-menu-nav-item">
+                    <a href="#" class="mobal-menu-nav-link link">Контакты</a>
+                </li>
+            </ul>
+        
+            <ul>
+                <li class="navigation-list-item">
+                    <a class="tel-link link" href="tel:+380961111111">
+                        +38 096 111 11 11
+                    </a>
+                </li>
+        
+                <li class="navigation-list-item">
+                    <a class="mail-link link" href="mailto:info@devstudio.com">
+                        info@devstudio.com
+                    </a>
+                </li>
+            </ul>
+        
+            <ul class="social-list-link-mobal">
+                <li>
+                    <a href="#" class="link-mobal line-mobal link">
+                        Instagram
+                    </a>
+                </li>
+                <li><a href="#" class="link-mobal line-mobal link">
+                        Twitter
+                    </a></li>
+                <li> <a href="#" class="link-mobal line-mobal link">
+                        Facebook
+                    </a></li>
+                <li> <a href="#" class="link-mobal  link">
+                        LinkedIn
+                    </a></li>
+        
+            </ul>
+        
+        </div>
+    </header>
     
 
     <main>
@@ -95,14 +155,18 @@
     
         <!--карточки-->
         
-            <div class="container-cards">
+             <div class="container-cards">
                 <ul class="card-set">
                     <!--<h1>Top imeges</h1>-->
-                <!-- <li class="item">
+                <li class="item">
                     <a class="cards-links" href="#">
                     <article class="card">
                         <div class="card-thumb">
-                            <img class="img-list" src="./images/portfolio_img/website.jpg" alt="вебсайт технокряк" width="370" height="294">
+                            <picture>
+                                <source srcset="./images/portfolio_img/img-cards1.jpg 1x, ./images/portfolio_img/img-cards1@2.jpg 2x"
+                                    media="(min-widht: 320 px)">
+                                <img src="./images/portfolio_img/img-cards1.jpg" alt="Ноутбук">
+                            </picture>
                        <p class="overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                     шпионажа и атак на защищённые сервера конкурентов.</p>
                     </div>
@@ -119,7 +183,11 @@
                     <a class="cards-links" href="#">
                     <article class="card">
                         <div class="card-thumb">
-                        <img class="img-list" src="./images/portfolio_img/design.jpg" alt="дизайн постера" width="370" height="294">
+                        <picture>
+                            <source srcset="./images/portfolio_img/img-cards2.jpg 1x, ./images/portfolio_img/img-cards2@2.jpg 2x"
+                                media="(min-widht: 320 px)">
+                            <img src="./images/portfolio_img/img-cards2.jpg" alt="Постер">
+                        </picture>
                         <p class="overlay">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae ipsam cumque nemo eos reprehenderit inventore corporis possimus alias quod assumenda sit mollitia, consequuntur doloribus quae libero facere repellat, doloremque culpa?</p>
                     </div>
                         
@@ -136,7 +204,11 @@
                     <a class="cards-links" href="#">
                     <article class="card">
                         <div class="card-thumb">
-                        <img class="img-list" src="./images/portfolio_img/application.jpg" alt="приложение ресторана" width="370" height="294">
+                            <picture>
+                        <source srcset="./images/portfolio_img/img-cards3.jpg 1x, ./images/portfolio_img/img-cards3@2.jpg 2x"
+                            media="(min-widht: 320 px)">
+                        <img src="./images/portfolio_img/img-cards3.jpg" alt="Постер">
+                        </picture>
                     <p class="overlay">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae ipsam cumque nemo eos
                         reprehenderit inventore corporis possimus alias quod assumenda sit mollitia, consequuntur doloribus quae libero
                         facere repellat, doloremque culpa?</p>
@@ -154,7 +226,12 @@
                     <a class="cards-links" href="#">
                     <article class="card">
                         <div class="card-thumb">
-                        <img class="img-list" src="./images/portfolio_img/marketing.jpg" alt="маркетинг проекта" width="370" height="294">
+                            <picture>
+                                <source srcset="./images/portfolio_img/img-cards4.jpg 1x, ./images/portfolio_img/img-cards4@2.jpg 2x"
+                                    media="(min-widht: 320 px)">
+                                <img src="./images/portfolio_img/img-cards4.jpg" alt="маркетинг проекта">
+                            </picture>
+                        
                     <p class="overlay">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae ipsam cumque nemo eos reprehenderit inventore corporis possimus alias quod assumenda sit mollitia, consequuntur doloribus quae libero facere repellat, doloremque culpa?</p>    
                     </div>
                         
@@ -170,7 +247,12 @@
                     <a class="cards-links" href="#">
                     <article class="card">
                         <div class="card-thumb">
-                        <img class="img-list" src="./images/portfolio_img/project_boxes.jpg" alt="приложение проекта" width="370" height="294">
+                            <picture>
+                                <source srcset="./images/portfolio_img/img-cards5.jpg 1x, ./images/portfolio_img/img-cards5@2.jpg 2x"
+                                    media="(min-widht: 320 px)">
+                                <img src="./images/portfolio_img/img-cards5.jpg" alt="приложение проекта">
+                            </picture>
+                        
                     <p class="overlay">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae ipsam cumque nemo eos reprehenderit inventore corporis possimus alias quod assumenda sit mollitia, consequuntur doloribus quae libero facere repellat, doloremque culpa?</p>    
                     </div>
                         
@@ -186,7 +268,12 @@
                     <a class="cards-links" href="#">
                     <article class="card">
                         <div class="card-thumb">
-                        <img class="img-list" src="./images/portfolio_img/borders.jpg" alt="Веб-сайт" width="370" height="294">
+                            <picture>
+                                <source srcset="./images/portfolio_img/img-cards6.jpg 1x, ./images/portfolio_img/img-cards6@2.jpg 2x"
+                                    media="(min-widht: 320 px)">
+                                <img src="./images/portfolio_img/img-cards6.jpg" alt="Веб-сайт">
+                            </picture>
+                        
                     <p class="overlay">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae ipsam cumque nemo eos reprehenderit inventore corporis possimus alias quod assumenda sit mollitia, consequuntur doloribus quae libero facere repellat, doloremque culpa?</p>    
                     </div>
                         
@@ -202,7 +289,11 @@
                     <a class="cards-links" href="#">
                     <article class="card">
                         <div class="card-thumb">
-                        <img class="img-list" src="./images/portfolio_img/limited_edition.jpg" alt="дизайн издания" width="370" height="294">
+                            <source srcset="./images/portfolio_img/img-cards7.jpg 1x, ./images/portfolio_img/img-cards7@2.jpg 2x"
+                                media="(min-widht: 320 px)">
+                            <img src="./images/portfolio_img/img-cards7.jpg" alt="дизайн издания">
+                            </picture>
+                        
                     <p class="overlay">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae ipsam cumque nemo eos reprehenderit inventore corporis possimus alias quod assumenda sit mollitia, consequuntur doloribus quae libero facere repellat, doloremque culpa?</p>    
                     </div>
                         
@@ -218,7 +309,11 @@
                     <a class="cards-links" href="#">
                     <article class="card">
                         <div class="card-thumb">
-                        <img class="img-list" src="./images/portfolio_img/lab.jpg" alt="маркетинг проекта лаб" width="370" height="294">
+                            <source srcset="./images/portfolio_img/img-cards8.jpg 1x, ./images/portfolio_img/img-cards8@2.jpg 2x"
+                                media="(min-widht: 320 px)">
+                            <img src="./images/portfolio_img/img-cards8.jpg" alt="маркетинг проекта лаб">
+                            </picture>
+                        
                     <p class="overlay">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae ipsam cumque nemo eos reprehenderit inventore corporis possimus alias quod assumenda sit mollitia, consequuntur doloribus quae libero facere repellat, doloremque culpa?</p>    
                     </div>
                         
@@ -234,7 +329,11 @@
                     <a class="cards-links" href="#">
                     <article class="card">
                         <div class="card-thumb">
-                        <img class="img-list" src="./images/portfolio_img/bussines.jpg" alt="приложение для бизнеса" width="370" height="294">
+                            <source srcset="./images/portfolio_img/img-cards9.jpg 1x, ./images/portfolio_img/img-cards9@2.jpg 2x"
+                                media="(min-widht: 320 px)">
+                            <img src="./images/portfolio_img/img-cards9.jpg" alt="приложение для бизнеса">
+                            </picture>
+                        
                     <p class="overlay">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae ipsam cumque nemo eos reprehenderit inventore corporis possimus alias quod assumenda sit mollitia, consequuntur doloribus quae libero facere repellat, doloremque culpa?</p>    
                     </div>
                         
@@ -244,7 +343,7 @@
                         </div>
                         </article>
                         </a>
-                </li> -->
+                </li>
                 </ul>
             
             </div>
@@ -253,7 +352,7 @@
 
     <!--footer-->
 
-        <!-- <section class="footer-page">
+        <section class="footer-page">
             <footer class="footer">
                 <div class="container-footer">
                     <div class="footer-left-side">
@@ -330,7 +429,7 @@
                 </div>
         
             </footer>
-        </section> -->
+        </section>
     
 </body>
 </html>
