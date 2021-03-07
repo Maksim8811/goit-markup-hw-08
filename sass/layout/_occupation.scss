@@ -1,0 +1,57 @@
+.occupation {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container-occupation {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 94px;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.occupation-list {
+  display: flex;
+}
+
+.occupation-title {
+  @include font($fs: 36px, $fw: 700, $lh: 40px);
+
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+.occupation-list-img {
+  margin-top: 50px;
+  margin-bottom: 94px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.pop {
+  position: relative;
+}
+
+.text-position {
+  font-family: Roboto;
+  font-style: normal;
+  @include font($fs: 14px, $fw: bold, $lh: 16px);
+
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  margin: 0;
+  padding: 27px 82px;
+  background: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  bottom: 0px;
+  height: 70px;
+  width: 100%;
+}
