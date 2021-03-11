@@ -7,22 +7,22 @@
   margin-right: auto;
   padding-top: 118px;
 
-  padding-left: 60px;
-  padding-right: 60px;
+  // padding-left: 60px;
+  // padding-right: 60px;
 }
 
 .hero {
   text-align: center;
 
   background-color: #757575;
-  background-image: url("/images/hero/img-mobal-hero.jpg");
+  background-image: url("../images/hero/img-mobal-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .container-hero {
   height: 400px;
-  width: 460px;
+  // width: 460px;
   padding-bottom: 0px;
 }
 
@@ -48,6 +48,52 @@
   text-align: center;
   margin-top: 30px;
 }
+
+// tablet hero //
+
+// .hero {
+//   text-align: center;
+//   padding-left: 15px;
+//   padding-right: 15px;
+//   background-color: #757575;
+//   background-image: linear-gradient(
+//       rgba(47, 48, 58, 0.4),
+//       rgba(47, 48, 58, 0.4)
+//     ),
+//     url("../images/hero/img-table-hero1.jpg");
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
+
+.container-hero {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.hero-title {
+  @include font($fs: 26px, $fw: 900, $lh: 42зx);
+
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #ffffff;
+}
+
+.button {
+  @include font($fs: 16px, $fw: 700, $lh: 30px);
+
+  padding: 10px 32px;
+  border: 0;
+  min-width: 200px;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: #ffffff;
+  background: var(--accent-color);
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 30px;
+}
+
 //.container-hero {
 //  margin-left: auto;
 //  margin-right: auto;
