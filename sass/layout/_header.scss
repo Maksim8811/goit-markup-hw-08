@@ -240,7 +240,7 @@
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--title-color);
-    padding: 32px 0px;
+    // padding: 32px 0px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
@@ -250,7 +250,7 @@
   }
   .tel-link-icon {
     width: 10px;
-    height: 16px;
+    height: 14px;
     margin-right: 10px;
     fill: currentColor;
   }
@@ -259,12 +259,13 @@
     display: flex;
     align-items: center;
     text-decoration: none;
+    margin-bottom: 12px;
 
     @include font($fs: 14px, $fw: 500, $lh: 16px);
 
     letter-spacing: 0.02em;
     color: var(--text-color);
-    // margin-right: 15px;
+
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
@@ -275,8 +276,8 @@
 
   .mail-link-icon {
     margin-right: 10px;
-    width: 16px;
-    height: 12px;
+    width: 14px;
+    height: 10px;
     fill: currentColor;
   }
 
@@ -296,7 +297,6 @@
     }
   }
   .navigation-list-mailtel {
-    margin-top: 0;
     display: block;
   }
 }
