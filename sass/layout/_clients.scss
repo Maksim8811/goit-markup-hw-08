@@ -20,6 +20,7 @@
 .clients-list-client {
   margin-right: 15px;
 }
+
 .clients-list-client:nth-child(even) {
   margin-left: 15px;
   margin-bottom: 30px;
@@ -35,6 +36,8 @@
   border-radius: 4px;
   width: 210px;
   height: 90px;
+  // width: calc (100% - 2 * 15px) / 2;
+  // margin: 15px;
 
   &:hover,
   &:focus {
