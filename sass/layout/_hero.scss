@@ -6,9 +6,11 @@
   margin-left: auto;
   margin-right: auto;
   padding-top: 118px;
+  height: 400px;
 
-  // padding-left: 60px;
-  // padding-right: 60px;
+  padding-bottom: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .hero {
@@ -26,12 +28,6 @@
   .hero {
     background-image: url("../images/hero/img-mobal-hero@2x.jpg");
   }
-}
-
-.container-hero {
-  height: 400px;
-  // width: 460px;
-  padding-bottom: 0px;
 }
 
 .hero-title {
@@ -59,49 +55,103 @@
 
 // tablet hero //
 
-// .hero {
-//   text-align: center;
-//   padding-left: 15px;
-//   padding-right: 15px;
-//   background-color: #757575;
-//   background-image: linear-gradient(
-//       rgba(47, 48, 58, 0.4),
-//       rgba(47, 48, 58, 0.4)
-//     ),
-//     url("../images/hero/img-table-hero1.jpg");
-//   background-repeat: no-repeat;
-//   background-size: cover;
-// }
+@media screen and (min-width: 768px) {
+  .hero {
+    text-align: center;
 
-.container-hero {
-  padding-left: 15px;
-  padding-right: 15px;
+    background-color: #757575;
+    background-image: url("../images/hero/img-tablet-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: url("../images/hero/img-tablet-hero@2x.jpg");
+    }
+  }
+
+  .hero-title {
+    @include font($fs: 26px, $fw: 900, $lh: 42зx);
+
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .button {
+    @include font($fs: 16px, $fw: 700, $lh: 30px);
+
+    padding: 10px 32px;
+    border: 0;
+    min-width: 200px;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    color: #ffffff;
+    background: var(--accent-color);
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 30px;
+  }
 }
 
-.hero-title {
-  @include font($fs: 26px, $fw: 900, $lh: 42зx);
+//decktop//
 
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  text-align: center;
-  color: #ffffff;
+@media screen and (min-width: 1200px) {
+  .container-hero {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    height: 600px;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .hero {
+    text-align: center;
+
+    background-color: #757575;
+    background-image: url("../images/hero/img-desktop-hero1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: url("../images/hero/img-desktop-hero1@2x.jpg");
+    }
+  }
+
+  .hero-title {
+    @include font($fs: 44px, $fw: 900, $lh: 60зx);
+
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .button {
+    @include font($fs: 16px, $fw: 700, $lh: 30px);
+
+    padding: 10px 32px;
+    border: 0;
+    min-width: 200px;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    color: #ffffff;
+    background: var(--accent-color);
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 30px;
+  }
 }
-
-.button {
-  @include font($fs: 16px, $fw: 700, $lh: 30px);
-
-  padding: 10px 32px;
-  border: 0;
-  min-width: 200px;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  color: #ffffff;
-  background: var(--accent-color);
-  border-radius: 4px;
-  text-align: center;
-  margin-top: 30px;
-}
-
+//////////////////
 //.container-hero {
 //  margin-left: auto;
 //  margin-right: auto;

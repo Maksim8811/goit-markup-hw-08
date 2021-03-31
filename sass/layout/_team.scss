@@ -198,6 +198,31 @@
   }
 }
 
+//desktop//
+
+@media screen and (min-width: 1200px) {
+  .team {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+    background-color: #f5f4fa;
+  }
+  .container-team {
+    margin: 0 auto;
+
+    width: 100%;
+
+    padding-top: 94px;
+
+    background-color: #f5f4fa;
+  }
+
+  .team-list {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 ////////////////
 //.container-team {
 // margin-left: auto;
